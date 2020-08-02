@@ -29,7 +29,7 @@ var upload = multer({
 });
 
 // User model
-let User = require('../models/User');
+let User = require('./../models/User');
 
 router.post('/user-profile', upload.single('profileImg'), (req, res, next) => {
     const url = req.protocol + '://' + req.get('host')
