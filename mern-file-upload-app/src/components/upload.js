@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react'
 
-export const FilesUploadComponent = () => {
+export default function upload() {
     return (
         <div className="container">
             <div className="row">
