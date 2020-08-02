@@ -1,9 +1,9 @@
 let express = require('express'),
     multer = require('multer'),
     mongoose = require('mongoose'),
-    uuidv4 = require('uuid'),
     router = express.Router();
 
+const { v4: uuidv4 } = require('uuid');
 const DIR = './public/';
 
 const storage = multer.diskStorage({
